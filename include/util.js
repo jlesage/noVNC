@@ -213,7 +213,7 @@ Util.init_logging = function (level) {
         case 'debug':
             Util.Debug = function (msg) { console.log(msg); };
         case 'info':
-            Util.Info  = function (msg) { console.log(msg); };
+            Util.Info  = function (msg) { console.info(msg); };
         case 'warn':
             Util.Warn  = function (msg) { console.warn(msg); };
         case 'error':
