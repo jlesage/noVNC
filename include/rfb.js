@@ -616,6 +616,7 @@ var RFB;
 
                     this._viewportDragPos = {'x': x, 'y': y};
                     this._display.viewportChangePos(deltaX, deltaY);
+                    RFB.messages.fbUpdateRequests(this._sock, this._display.getCleanDirtyReset(), this._fb_width, this._fb_height);
                 }
 
                 // Skip sending mouse events
