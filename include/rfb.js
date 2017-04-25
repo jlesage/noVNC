@@ -323,6 +323,10 @@ var RFB;
             }
         },
 
+        requestFrameBufferUpdate: function() {
+            RFB.messages.fbUpdateRequests(this._sock, this._display.getCleanDirtyReset(), this._fb_width, this._fb_height);
+        },
+
 
         // Private methods
 
